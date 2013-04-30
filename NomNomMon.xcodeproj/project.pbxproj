@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8145A717299EF8004AAA94 /* ACActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8145A617299EF8004AAA94 /* ACActor.m */; };
 		5D87BB6F1728431900010940 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D87BB6E1728431900010940 /* UIKit.framework */; };
 		5D87BB711728431900010940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D87BB701728431900010940 /* Foundation.framework */; };
 		5D87BB731728431900010940 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D87BB721728431900010940 /* CoreGraphics.framework */; };
@@ -18,9 +19,20 @@
 		5D87BB851728431900010940 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D87BB841728431900010940 /* Default-568h@2x.png */; };
 		5D87BB881728431900010940 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D87BB861728431900010940 /* MainStoryboard.storyboard */; };
 		5D87BB8B1728431900010940 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BB8A1728431900010940 /* ACViewController.m */; };
+		5D87BB931728444B00010940 /* ACGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BB921728444B00010940 /* ACGameViewController.m */; };
+		5D87BB961728445B00010940 /* ACHighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BB951728445B00010940 /* ACHighScoreViewController.m */; };
+		5D87BB99172844D500010940 /* ACNomNomMon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BB98172844D500010940 /* ACNomNomMon.m */; };
+		5D87BB9C172844F400010940 /* ACMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BB9B172844F400010940 /* ACMapView.m */; };
+		5D87BB9F1728450900010940 /* ACFoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BB9E1728450900010940 /* ACFoodView.m */; };
+		5D87BBA51728453B00010940 /* ACNomNomGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBA41728453B00010940 /* ACNomNomGame.m */; };
+		5D87BBAB1728456700010940 /* ACNomNomPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBAA1728456700010940 /* ACNomNomPlayer.m */; };
+		5D87BBAE1728458300010940 /* ACGhost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBAD1728458300010940 /* ACGhost.m */; };
+		5D87BBB1172845D500010940 /* ACTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBB0172845D500010940 /* ACTileView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D8145A517299EF8004AAA94 /* ACActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActor.h; sourceTree = "<group>"; };
+		5D8145A617299EF8004AAA94 /* ACActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACActor.m; sourceTree = "<group>"; };
 		5D87BB6B1728431900010940 /* NomNomMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NomNomMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D87BB6E1728431900010940 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5D87BB701728431900010940 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +49,24 @@
 		5D87BB871728431900010940 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5D87BB891728431900010940 /* ACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACViewController.h; sourceTree = "<group>"; };
 		5D87BB8A1728431900010940 /* ACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACViewController.m; sourceTree = "<group>"; };
+		5D87BB911728444B00010940 /* ACGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGameViewController.h; sourceTree = "<group>"; };
+		5D87BB921728444B00010940 /* ACGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACGameViewController.m; sourceTree = "<group>"; };
+		5D87BB941728445B00010940 /* ACHighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACHighScoreViewController.h; sourceTree = "<group>"; };
+		5D87BB951728445B00010940 /* ACHighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACHighScoreViewController.m; sourceTree = "<group>"; };
+		5D87BB97172844D500010940 /* ACNomNomMon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNomNomMon.h; sourceTree = "<group>"; };
+		5D87BB98172844D500010940 /* ACNomNomMon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNomNomMon.m; sourceTree = "<group>"; };
+		5D87BB9A172844F400010940 /* ACMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMapView.h; sourceTree = "<group>"; };
+		5D87BB9B172844F400010940 /* ACMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMapView.m; sourceTree = "<group>"; };
+		5D87BB9D1728450900010940 /* ACFoodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFoodView.h; sourceTree = "<group>"; };
+		5D87BB9E1728450900010940 /* ACFoodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFoodView.m; sourceTree = "<group>"; };
+		5D87BBA31728453B00010940 /* ACNomNomGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNomNomGame.h; sourceTree = "<group>"; };
+		5D87BBA41728453B00010940 /* ACNomNomGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNomNomGame.m; sourceTree = "<group>"; };
+		5D87BBA91728456700010940 /* ACNomNomPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNomNomPlayer.h; sourceTree = "<group>"; };
+		5D87BBAA1728456700010940 /* ACNomNomPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNomNomPlayer.m; sourceTree = "<group>"; };
+		5D87BBAC1728458300010940 /* ACGhost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGhost.h; sourceTree = "<group>"; };
+		5D87BBAD1728458300010940 /* ACGhost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACGhost.m; sourceTree = "<group>"; };
+		5D87BBAF172845D500010940 /* ACTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTileView.h; sourceTree = "<group>"; };
+		5D87BBB0172845D500010940 /* ACTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTileView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +116,28 @@
 				5D87BB7D1728431900010940 /* ACAppDelegate.h */,
 				5D87BB7E1728431900010940 /* ACAppDelegate.m */,
 				5D87BB861728431900010940 /* MainStoryboard.storyboard */,
+				5D87BB911728444B00010940 /* ACGameViewController.h */,
+				5D87BB921728444B00010940 /* ACGameViewController.m */,
+				5D87BB941728445B00010940 /* ACHighScoreViewController.h */,
+				5D87BB951728445B00010940 /* ACHighScoreViewController.m */,
 				5D87BB891728431900010940 /* ACViewController.h */,
 				5D87BB8A1728431900010940 /* ACViewController.m */,
+				5D87BB97172844D500010940 /* ACNomNomMon.h */,
+				5D87BB98172844D500010940 /* ACNomNomMon.m */,
+				5D8145A517299EF8004AAA94 /* ACActor.h */,
+				5D8145A617299EF8004AAA94 /* ACActor.m */,
+				5D87BB9A172844F400010940 /* ACMapView.h */,
+				5D87BB9B172844F400010940 /* ACMapView.m */,
+				5D87BBA91728456700010940 /* ACNomNomPlayer.h */,
+				5D87BBAA1728456700010940 /* ACNomNomPlayer.m */,
+				5D87BBAC1728458300010940 /* ACGhost.h */,
+				5D87BBAD1728458300010940 /* ACGhost.m */,
+				5D87BBAF172845D500010940 /* ACTileView.h */,
+				5D87BBB0172845D500010940 /* ACTileView.m */,
+				5D87BB9D1728450900010940 /* ACFoodView.h */,
+				5D87BB9E1728450900010940 /* ACFoodView.m */,
+				5D87BBA31728453B00010940 /* ACNomNomGame.h */,
+				5D87BBA41728453B00010940 /* ACNomNomGame.m */,
 				5D87BB751728431900010940 /* Supporting Files */,
 			);
 			path = NomNomMon;
@@ -177,6 +227,16 @@
 				5D87BB7B1728431900010940 /* main.m in Sources */,
 				5D87BB7F1728431900010940 /* ACAppDelegate.m in Sources */,
 				5D87BB8B1728431900010940 /* ACViewController.m in Sources */,
+				5D87BB931728444B00010940 /* ACGameViewController.m in Sources */,
+				5D87BB961728445B00010940 /* ACHighScoreViewController.m in Sources */,
+				5D87BB99172844D500010940 /* ACNomNomMon.m in Sources */,
+				5D87BB9C172844F400010940 /* ACMapView.m in Sources */,
+				5D87BB9F1728450900010940 /* ACFoodView.m in Sources */,
+				5D87BBA51728453B00010940 /* ACNomNomGame.m in Sources */,
+				5D87BBAB1728456700010940 /* ACNomNomPlayer.m in Sources */,
+				5D87BBAE1728458300010940 /* ACGhost.m in Sources */,
+				5D87BBB1172845D500010940 /* ACTileView.m in Sources */,
+				5D8145A717299EF8004AAA94 /* ACActor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +361,7 @@
 				5D87BB901728431900010940 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
