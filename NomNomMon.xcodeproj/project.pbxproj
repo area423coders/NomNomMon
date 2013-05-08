@@ -29,6 +29,9 @@
 		5D87BBAB1728456700010940 /* ACNomNomPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBAA1728456700010940 /* ACNomNomPlayer.m */; };
 		5D87BBAE1728458300010940 /* ACGhost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBAD1728458300010940 /* ACGhost.m */; };
 		5D87BBB1172845D500010940 /* ACTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBB0172845D500010940 /* ACTileView.m */; };
+		89F65630173A7FBA0070D029 /* emptyTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F6562D173A7FBA0070D029 /* emptyTile.png */; };
+		89F65631173A7FBA0070D029 /* pelletTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F6562E173A7FBA0070D029 /* pelletTile.png */; };
+		89F65632173A7FBA0070D029 /* powerPelletTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F6562F173A7FBA0070D029 /* powerPelletTile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		5D87BBAD1728458300010940 /* ACGhost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACGhost.m; sourceTree = "<group>"; };
 		5D87BBAF172845D500010940 /* ACTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTileView.h; sourceTree = "<group>"; };
 		5D87BBB0172845D500010940 /* ACTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTileView.m; sourceTree = "<group>"; };
+		89F6562D173A7FBA0070D029 /* emptyTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyTile.png; sourceTree = "<group>"; };
+		89F6562E173A7FBA0070D029 /* pelletTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pelletTile.png; sourceTree = "<group>"; };
+		89F6562F173A7FBA0070D029 /* powerPelletTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerPelletTile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 				5D87BB7E1728431900010940 /* ACAppDelegate.m */,
 				5D87BB861728431900010940 /* MainStoryboard.storyboard */,
 				5D87BB911728444B00010940 /* ACGameViewController.h */,
+				89F6562D173A7FBA0070D029 /* emptyTile.png */,
+				89F6562E173A7FBA0070D029 /* pelletTile.png */,
+				89F6562F173A7FBA0070D029 /* powerPelletTile.png */,
 				5D87BB921728444B00010940 /* ACGameViewController.m */,
 				5D87BB941728445B00010940 /* ACHighScoreViewController.h */,
 				5D87BB951728445B00010940 /* ACHighScoreViewController.m */,
@@ -218,6 +227,9 @@
 				5D87BB851728431900010940 /* Default-568h@2x.png in Resources */,
 				5D87BB881728431900010940 /* MainStoryboard.storyboard in Resources */,
 				5D6A822417303D1D000F672B /* .gitignore in Resources */,
+				89F65630173A7FBA0070D029 /* emptyTile.png in Resources */,
+				89F65631173A7FBA0070D029 /* pelletTile.png in Resources */,
+				89F65632173A7FBA0070D029 /* powerPelletTile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
