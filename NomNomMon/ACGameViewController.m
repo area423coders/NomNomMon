@@ -5,6 +5,7 @@
 //  Created by Jason Oswald on 4/24/13.
 //  Copyright (c) 2013 Baylor School. All rights reserved.
 //  testing out github connection
+//  Alec
 //
 
 #import "ACGameViewController.h"
@@ -21,9 +22,9 @@
 {
     [super viewDidLoad];
     
-    [self startGame];
-    
     [self.view addSubview:_map];
+    
+    [self startGame];
 }
 
 - (void) startGame
@@ -40,6 +41,13 @@
 - (void) makeFoodAppear
 {
     [_map addSubview:[[ACFoodView alloc] init]];
+}
+
+- (void) update
+{
+    [_map updateNomNomMonPosition];
+    [_map updateGhostPositions];
+    [self checkForCollisions];
 }
 
 /* Collision Handling */
