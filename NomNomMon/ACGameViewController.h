@@ -21,7 +21,9 @@
 @property NSArray* ghosts;
 
 - (void) startGame;
+- (void) nextLevel;
 
+- (void) update;
 - (void) checkForCollisions; // Checks for collisions, then notifies the objects
 
 @end

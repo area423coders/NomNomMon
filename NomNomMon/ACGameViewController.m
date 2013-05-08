@@ -22,9 +22,9 @@
 {
     [super viewDidLoad];
     
-    [self startGame];
-    
     [self.view addSubview:_map];
+    
+    [self startGame];
 }
 
 - (void) startGame
@@ -41,6 +41,13 @@
 - (void) makeFoodAppear
 {
     [_map addSubview:[[ACFoodView alloc] init]];
+}
+
+- (void) update
+{
+    [_map updateNomNomMonPosition];
+    [_map updateGhostPositions];
+    [self checkForCollisions];
 }
 
 /* Collision Handling */
