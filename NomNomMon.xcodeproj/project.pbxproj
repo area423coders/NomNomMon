@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52E9E61A17381C6F00EE39E2 /* nomNomMon0.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E9E61717381C6F00EE39E2 /* nomNomMon0.png */; };
-		52E9E61B17381C6F00EE39E2 /* nomNomMon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E9E61817381C6F00EE39E2 /* nomNomMon1.png */; };
-		52E9E61C17381C6F00EE39E2 /* nomNomMon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E9E61917381C6F00EE39E2 /* nomNomMon2.png */; };
 		5D6A822417303D1D000F672B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5D6A822317303D1D000F672B /* .gitignore */; };
 		5D8145A717299EF8004AAA94 /* ACActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8145A617299EF8004AAA94 /* ACActor.m */; };
 		5D87BB6F1728431900010940 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D87BB6E1728431900010940 /* UIKit.framework */; };
@@ -131,13 +128,13 @@
 				52E9E61717381C6F00EE39E2 /* nomNomMon0.png */,
 				52E9E61817381C6F00EE39E2 /* nomNomMon1.png */,
 				52E9E61917381C6F00EE39E2 /* nomNomMon2.png */,
+				89F6562D173A7FBA0070D029 /* emptyTile.png */,
+				89F6562E173A7FBA0070D029 /* pelletTile.png */,
+				89F6562F173A7FBA0070D029 /* powerPelletTile.png */,
 				5D87BB7D1728431900010940 /* ACAppDelegate.h */,
 				5D87BB7E1728431900010940 /* ACAppDelegate.m */,
 				5D87BB861728431900010940 /* MainStoryboard.storyboard */,
 				5D87BB911728444B00010940 /* ACGameViewController.h */,
-				89F6562D173A7FBA0070D029 /* emptyTile.png */,
-				89F6562E173A7FBA0070D029 /* pelletTile.png */,
-				89F6562F173A7FBA0070D029 /* powerPelletTile.png */,
 				5D87BB921728444B00010940 /* ACGameViewController.m */,
 				5D87BB941728445B00010940 /* ACHighScoreViewController.h */,
 				5D87BB951728445B00010940 /* ACHighScoreViewController.m */,
