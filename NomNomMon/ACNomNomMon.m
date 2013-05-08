@@ -8,25 +8,29 @@
 
 #import "ACNomNomMon.h"
 
+
 @implementation ACNomNomMon
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
-        self.direction = ACDirectionNorth;
+        NSArray *animationFrames = [NSArray arrayWithObjects:
+                                    [UIImage imageNamed:@"nomNomMon0.png"],
+                                    [UIImage imageNamed:@"nomNomMon1.png"],
+                                    [UIImage imageNamed:@"nomNomMon2.png"],
+                                    [UIImage imageNamed:@"nomNomMon1.png"],
+                                    nil];
+        UIImageView *animation = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nomNomMon0.png"]];
+        animation.backgroundColor = [UIColor clearColor];
+        animation.animationImages = animationFrames;
+        animation.animationDuration = .7;
+        animation.animationRepeatCount = 0;
+        [animation startAnimating];
+        [self addSubview:animation];
     }
     return self;
+    
+    
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 @end
