@@ -29,6 +29,7 @@
 		5D87BBAB1728456700010940 /* ACNomNomPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBAA1728456700010940 /* ACNomNomPlayer.m */; };
 		5D87BBAE1728458300010940 /* ACGhost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBAD1728458300010940 /* ACGhost.m */; };
 		5D87BBB1172845D500010940 /* ACTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87BBB0172845D500010940 /* ACTileView.m */; };
+		DF654111173AB82F000B5394 /* ACChasingGhost.m in Sources */ = {isa = PBXBuildFile; fileRef = DF654110173AB82F000B5394 /* ACChasingGhost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		5D87BBAD1728458300010940 /* ACGhost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACGhost.m; sourceTree = "<group>"; };
 		5D87BBAF172845D500010940 /* ACTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTileView.h; sourceTree = "<group>"; };
 		5D87BBB0172845D500010940 /* ACTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTileView.m; sourceTree = "<group>"; };
+		DF65410F173AB82F000B5394 /* ACChasingGhost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACChasingGhost.h; sourceTree = "<group>"; };
+		DF654110173AB82F000B5394 /* ACChasingGhost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACChasingGhost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				5D87BB9B172844F400010940 /* ACMapView.m */,
 				5D87BBA91728456700010940 /* ACNomNomPlayer.h */,
 				5D87BBAA1728456700010940 /* ACNomNomPlayer.m */,
+				DF65410F173AB82F000B5394 /* ACChasingGhost.h */,
+				DF654110173AB82F000B5394 /* ACChasingGhost.m */,
 				5D87BBAC1728458300010940 /* ACGhost.h */,
 				5D87BBAD1728458300010940 /* ACGhost.m */,
 				5D87BBAF172845D500010940 /* ACTileView.h */,
@@ -241,6 +246,7 @@
 				5D87BBAE1728458300010940 /* ACGhost.m in Sources */,
 				5D87BBB1172845D500010940 /* ACTileView.m in Sources */,
 				5D8145A717299EF8004AAA94 /* ACActor.m in Sources */,
+				DF654111173AB82F000B5394 /* ACChasingGhost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
