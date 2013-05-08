@@ -12,7 +12,10 @@ typedef NS_ENUM(NSInteger, ACTileType) {
     ACEmptyTile,
     ACPelletTile,
     ACPowerPelletTile,
-    ACSingleWallTile  // there's more
+    ACSingleWallTile,
+    ACTwoCornerWAllTile,
+    ACOneCornerWallTile,
+    ACFourRoundedCornersTile
 };
 
 @interface ACTileView : UIView

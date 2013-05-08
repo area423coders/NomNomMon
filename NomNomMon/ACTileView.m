@@ -24,7 +24,8 @@
 
 - (NSString*) imageFileNameForType: (ACTileType) tileType
 {
-    switch (tileType) {
+    switch (tileType)
+    {
         case ACEmptyTile:
             return @"emptytile.png";
             break;
@@ -33,6 +34,18 @@
             break;
         case ACPowerPelletTile:
             return @"powerpellettile.png";
+            break;
+        case ACSingleWallTile:
+            return @"wall0corners.png";
+            break;
+        case ACTwoCornerWAllTile:
+            return @"redSquare@,png";
+            break;
+        case ACOneCornerWallTile:
+            return @"Wall1Corner.png";
+            break;
+        case ACFourRoundedCornersTile:
+            return @"wall4Corners.png";
             break;
         default:
             return @"emptytile.png";
