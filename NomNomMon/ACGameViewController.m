@@ -31,6 +31,13 @@
 {
     _game = [[ACNomNomGame alloc] init];
     _map = [[ACMapView alloc] init];
+    
+    // Create timer
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.01
+                                             target:self
+                                           selector:@selector(update)
+                                           userInfo:nil
+                                            repeats:YES];
 }
 
 - (void) nextLevel
@@ -54,6 +61,7 @@
 /* Collision Handling */
 - (void) checkForCollisions
 {
+    NMPoint nnp = [self getPointOnMap:[_nomNomMon convertPoint:CGPointMake(33, 33) toView:_map]];
     // The only important collisions are between NNM and some actor
     /*for (int i = 0; i < [_ghosts count]; i++)
     {
@@ -64,6 +72,15 @@
             [_game nomNomMonCollision:[_ghosts objectAtIndex:i]];
         }
     }*/
+}
+
+- (NMPoint) getPointOnMap:(CGPoint)point
+{
+    NMPoint result;
+    result.x = point.x / 66;
+    result.y = point.y / 66;
+    
+    return result;
 }
 
 - (void)didReceiveMemoryWarning
