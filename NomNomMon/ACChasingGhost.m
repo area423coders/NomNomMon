@@ -1,42 +1,22 @@
 //
-//  ACGhost.m
+//  ACChasingGhost.m
 //  NomNomMon
 //
-//  Created by Jason Oswald on 4/24/13.
+//  Created by tgay on 5/8/13.
 //  Copyright (c) 2013 Baylor School. All rights reserved.
 //
 
-#import "ACGhost.h"
+#import "ACChasingGhost.h"
 
-@implementation ACGhost
+@implementation ACChasingGhost
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.speed = 0; // pixels per whatever
-        self.state = ACGhostWaiting;
+        // Initialization code
     }
     return self;
-}
-
-- (void) setState:(ACGhostState)state
-{
-    switch (state) {
-        case ACGhostWaiting:
-            self.speed = 0;
-            break;
-        case ACGhostChasing:
-            self.speed = 100;
-            break;
-        case ACGhostPanicking:
-            self.speed = 50;
-            break;
-        default:
-            self.speed = 0;
-            break;
-    }
-    self.state = state;
 }
 
 - (void) didGetEaten
@@ -51,7 +31,7 @@
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    // Search for the mouth and butt of Pac-Man
+    //self.ACDi nomNomMonLocation.x
 }
 
 /*

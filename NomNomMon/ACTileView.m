@@ -10,31 +10,47 @@
 
 @implementation ACTileView
 
-- (id)initWithFrame:(CGRect)frame
+- (id) initWithTileType: (ACTileType) tileType
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        switch (self.type) {
-            case ACEmptyTile:
-                // load the empty tile sprite
-                break;
-            case ACPelletTile:
-                // load the pellet tile sprite
-                break;
-            default:
-                break;
-        }
+    self = [super init];
+    if( self )
+    {
+        UIImageView* image = [[UIImageView alloc] initWithImage:
+                              [UIImage imageNamed:[self imageFileNameForType:tileType]]];
+        [self addSubview:image];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (NSString*) imageFileNameForType: (ACTileType) tileType
 {
-    // Drawing code
+    switch (tileType)
+    {
+        case ACEmptyTile:
+            return @"emptytile.png";
+            break;
+        case ACPelletTile:
+            return @"pelletTile.png";
+            break;
+        case ACPowerPelletTile:
+            return @"powerpellettile.png";
+            break;
+        case ACSingleWallTile:
+            return @"wall0corners.png";
+            break;
+        case ACTwoCornerWAllTile:
+            return @"redSquare@,png";
+            break;
+        case ACOneCornerWallTile:
+            return @"Wall1Corner.png";
+            break;
+        case ACFourRoundedCornersTile:
+            return @"wall4Corners.png";
+            break;
+        default:
+            return @"emptytile.png";
+            break;
+    }
 }
-*/
 
 @end
