@@ -11,4 +11,15 @@
 
 @implementation ACNomNomPlayer
 
+- (id) initPlayer
+{
+    if (self = [super init])
+    {
+        [self setScore:0];
+        [self setNumberOfLives:2];
+    }
+    return  self;
+}
+
+
 @end
