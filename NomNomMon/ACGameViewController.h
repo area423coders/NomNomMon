@@ -11,8 +11,11 @@
 #import "ACMapView.h"
 #import "ACNomNomMon.h"
 #import "ACNomNomGame.h"
+#import "ACNomNomPlayer.h"
 
 @interface ACGameViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property ACMapView* map;
 @property ACNomNomGame* game;

@@ -48,6 +48,7 @@
     [_map updateNomNomMonPosition];
     [_map updateGhostPositions];
     [self checkForCollisions];
+    [_scoreLabel setText:[NSString stringWithFormat:@"%i", _game.player.score]];
 }
 
 /* Collision Handling */
