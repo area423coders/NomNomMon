@@ -8,7 +8,12 @@
 
 #import "ACMapView.h"
 
-@implementation ACMapView
+@implementation ACMapView {
+    NSUInteger ROWS;
+    NSUInteger COLS;
+    NSUInteger tileSize;
+    NSArray* tiles;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -17,6 +22,18 @@
         // Initialization code
     }
     return self;
+}
+
+- (void) setTileType: (ACTileType) type atRow: (NSUInteger) row andColumn: (NSUInteger) column
+{
+    ACTileView* tile = [self getTileAtRow:row andColumn:column];
+    tile.type = type;
+}
+
+- (ACTileView*) getTileAtRow: (NSUInteger) row andColumn: (NSUInteger) column
+{
+    NSUInteger index = row * ROWS + column;
+    return [tiles objectAtIndex:index];
 }
 
 /*
