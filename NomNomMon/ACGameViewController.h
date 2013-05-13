@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "ACMapView.h"
 #import "ACNomNomMon.h"
+#import "ACGhost.h"
 #import "ACNomNomGame.h"
 #import "ACNomNomPlayer.h"
 
@@ -19,7 +20,6 @@
 
 @property ACMapView* map;
 @property ACNomNomGame* game;
-@property NSTimer* timer;
 
 @property ACNomNomMon* nomNomMon;
 @property NSArray* ghosts;
@@ -29,6 +29,6 @@
 
 - (void) update;
 - (void) checkForCollisions; // Checks for collisions, then notifies the objects
-- (CGPoint) getPointOnMap:(CGPoint)point;
+- (CGPoint) getPointOnMapForActor:(ACActor*)actor;
 
 @end
