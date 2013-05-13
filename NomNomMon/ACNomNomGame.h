@@ -12,5 +12,8 @@
 @interface ACNomNomGame : NSObject
 
 @property ACNomNomPlayer* player;
+@property NSTimer *gameTime;
+@property int highScore;
+@property int level;
 
 @end

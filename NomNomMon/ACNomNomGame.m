@@ -11,4 +11,12 @@
 
 @implementation ACNomNomGame
 
+- (id) init
+{
+    self = [super init];
+    self.level = 0;
+    ACNomNomPlayer* player = [self.player initPlayer];
+    return self;
+}
+
 @end
