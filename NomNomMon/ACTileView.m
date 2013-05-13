@@ -38,14 +38,32 @@
         case ACSingleWallTile:
             return @"wall0corners.png";
             break;
-        case ACTwoCornerWAllTile:
+        case ACTwoRoundedCornerNTile:
             return @"redSquare@,png";
             break;
-        case ACOneCornerWallTile:
+        case ACOneRoundedCornerNWTile:
             return @"Wall1Corner.png";
             break;
         case ACFourRoundedCornersTile:
             return @"wall4Corners.png";
+            break;
+        case ACOneRoundedCornerNETile:
+            return @"NE.png";
+            break;
+        case ACOneRoundedCornerSETile:
+            return @"SE.png";
+            break;
+        case ACOneRoundedCornerSWTile:
+            return @"SW.png";
+            break;
+        case ACTwoRoundedCornerETile:
+            return @"E.png";
+            break;
+        case ACTwoRoundedCornerSTile:
+            return @"S.png";
+            break;
+        case ACTwoRoundedCornerWTile:
+            return @"W.png";
             break;
         default:
             return @"emptytile.png";
