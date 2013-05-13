@@ -194,6 +194,7 @@
 				5D87BBA31728453B00010940 /* ACNomNomGame.h */,
 				5D87BBA41728453B00010940 /* ACNomNomGame.m */,
 				5D87BB751728431900010940 /* Supporting Files */,
+				75FA71F8173C11AF0013A866 /* Maps.plist */,
 			);
 			path = NomNomMon;
 			sourceTree = "<group>";

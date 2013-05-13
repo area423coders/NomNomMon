@@ -8,6 +8,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACTileView.h"
+
 @class ACNomNomMon, ACGhost;
 
 @interface ACMapView : UIView
@@ -18,5 +20,7 @@
 
 - (void) updateGhostPositions;
 - (void) updateNomNomMonPosition;
+- (ACTileView*) getTileAtRow: (NSUInteger) row andColumn: (NSUInteger) column;
+- (void) setTileType: (ACTileType) type atRow: (NSUInteger) row andColumn: (NSUInteger) column;
 
 @end
