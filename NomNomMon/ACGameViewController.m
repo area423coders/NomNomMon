@@ -61,7 +61,7 @@
 /* Collision Handling */
 - (void) checkForCollisions
 {
-    NMPoint nnp = [self getPointOnMap:[_nomNomMon convertPoint:CGPointMake(33, 33) toView:_map]];
+    CGPoint nnp = [self getPointOnMap:[_nomNomMon convertPoint:CGPointMake(33, 33) toView:_map]];
     // The only important collisions are between NNM and some actor
     /*for (int i = 0; i < [_ghosts count]; i++)
     {
@@ -74,9 +74,9 @@
     }*/
 }
 
-- (NMPoint) getPointOnMap:(CGPoint)point
+- (CGPoint) getPointOnMap:(CGPoint)point
 {
-    NMPoint result;
+    CGPoint result;
     result.x = point.x / 66;
     result.y = point.y / 66;
     

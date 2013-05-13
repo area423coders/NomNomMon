@@ -13,12 +13,6 @@
 #import "ACNomNomGame.h"
 #import "ACNomNomPlayer.h"
 
-struct NMPoint {
-    int x;
-    int y;
-};
-typedef struct NMPoint NMPoint;
-
 @interface ACGameViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -35,6 +29,6 @@ typedef struct NMPoint NMPoint;
 
 - (void) update;
 - (void) checkForCollisions; // Checks for collisions, then notifies the objects
-- (NMPoint) getPointOnMap:(CGPoint)point;
+- (CGPoint) getPointOnMap:(CGPoint)point;
 
 @end
