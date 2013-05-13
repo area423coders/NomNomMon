@@ -10,5 +10,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ACNomNomPlayer : NSObject
+@property int score;
+@property int numberOfLives;
+
+- (id) initPlayer;
 
 @end

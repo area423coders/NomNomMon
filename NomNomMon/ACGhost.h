@@ -11,6 +11,18 @@
 #import <UIKit/UIKit.h>
 #import "ACActor.h"
 
+typedef NS_ENUM(NSInteger, ACGhostState) {
+    ACGhostChasing,
+    ACGhostPanicking,
+    ACGhostWaiting
+};
+
 @interface ACGhost : ACActor
+
+@property CGFloat speed;
+@property (nonatomic) ACGhostState state;
+
+- (void) didGetEaten;
+- (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation;
 
 @end

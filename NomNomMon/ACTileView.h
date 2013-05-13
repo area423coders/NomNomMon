@@ -13,9 +13,15 @@ typedef NS_ENUM(NSInteger, ACTileType) {
     ACPelletTile,
     ACPowerPelletTile,
     ACSingleWallTile,
-    ACTwoCornerWAllTile,
-    ACOneCornerWallTile,
-    ACFourRoundedCornersTile
+    ACFourRoundedCornersTile,
+    ACOneRoundedCornerNETile,
+    ACOneRoundedCornerSETile,
+    ACOneRoundedCornerSWTile,
+    ACOneRoundedCornerNWTile,
+    ACTwoRoundedCornerNTile,
+    ACTwoRoundedCornerETile,
+    ACTwoRoundedCornerSTile,
+    ACTwoRoundedCornerWTile
 };
 
 @interface ACTileView : UIView
