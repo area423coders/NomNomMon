@@ -100,6 +100,8 @@
 		89C7BC32173C158500541760 /* SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SW.png; sourceTree = "<group>"; };
 		89C7BC33173C158500541760 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
 		89F6562E173A7FBA0070D029 /* pelletTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pelletTile.png; sourceTree = "<group>"; };
+		DFC45BA21742A3FD006E2D87 /* ACChasingGhost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACChasingGhost.h; sourceTree = "<group>"; };
+		DFC45BA31742A3FD006E2D87 /* ACChasingGhost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACChasingGhost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,8 @@
 				5D87BBAA1728456700010940 /* ACNomNomPlayer.m */,
 				5D87BBA91728456700010940 /* ACNomNomPlayer.h */,
 				5D87BBAA1728456700010940 /* ACNomNomPlayer.m */,
+				DFC45BA21742A3FD006E2D87 /* ACChasingGhost.h */,
+				DFC45BA31742A3FD006E2D87 /* ACChasingGhost.m */,
 				5D87BBAC1728458300010940 /* ACGhost.h */,
 				5D87BBAD1728458300010940 /* ACGhost.m */,
 				5D87BBAF172845D500010940 /* ACTileView.h */,
