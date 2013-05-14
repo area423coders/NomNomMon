@@ -19,7 +19,10 @@
     }
     return self;
 }
-
+- (void) initialState
+{
+    ACGhost.setstate(ACGhostWaiting)
+}
 - (void) setState:(ACGhostState)state
 {
     switch (state) {
@@ -39,10 +42,14 @@
     self.state = state;
 }
 
+
 - (void) didGetEaten
 {
-    // animation for death, send ghost to house, reset to default sprite
+
+     
+// send ghost to house, reset to default sprite
 }
+
 
 - (void) respawn
 {
@@ -51,7 +58,7 @@
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    // Search for the mouth and butt of Pac-Man
+    
 }
 
 /*
