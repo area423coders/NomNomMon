@@ -14,14 +14,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.speed = 0; // pixels per whatever
         self.state = ACGhostWaiting;
     }
     return self;
 }
 - (void) initialState
 {
-    ACGhost.setstate(ACGhostWaiting)
+    self.state = ACGhostWaiting;
 }
 - (void) setState:(ACGhostState)state
 {
@@ -45,8 +44,7 @@
 
 - (void) didGetEaten
 {
-
-     
+    
 // send ghost to house, reset to default sprite
 }
 

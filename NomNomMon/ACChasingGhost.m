@@ -31,7 +31,7 @@
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    //self.Baylor.underage.drinking = true nomNomMonLocation.x
+    //
 }
 
 /*
