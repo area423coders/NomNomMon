@@ -42,25 +42,12 @@
     self.state = state;
 }
 
-- (BOOL) ghostSharingTileWithNomNomMon
-{
-    
-    if (/*nomNomMon.tile == ghost.tile*/)
-    {
-        return YES;
-    }
-    else
-    {
-        return NO;
-    }
-}
 
 - (void) didGetEaten
 {
-    if (/*ghostSharingTileWithNomNomMon == YES*/)
-    {
-        
-    }// send ghost to house, reset to default sprite
+
+     
+// send ghost to house, reset to default sprite
 }
 
 
