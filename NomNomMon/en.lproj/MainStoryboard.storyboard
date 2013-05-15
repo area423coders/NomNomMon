@@ -19,7 +19,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-734" y="-202"/>
+            <point key="canvasLocation" x="-710" y="-674"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="vjU-PV-pKR">
@@ -43,7 +43,7 @@
                     <connections>
                         <outlet property="scoreLabel" destination="AKd-Qz-zlv" id="1Cr-Vf-Uea"/>
                         <segue destination="i2i-h8-JRk" kind="modal" id="sEB-Vh-UVL"/>
-                        <segue destination="2" kind="modal" id="wAS-Zk-Drq"/>
+                        <segue destination="2" kind="modal" identifier="startGame" id="wAS-Zk-Drq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0O-kI-TPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
