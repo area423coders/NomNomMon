@@ -14,12 +14,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.speed = 0; // pixels per whatever
         self.state = ACGhostWaiting;
     }
     return self;
 }
-
+- (void) initialState
+{
+    self.state = ACGhostWaiting;
+}
 - (void) setState:(ACGhostState)state
 {
     switch (state) {
@@ -39,10 +41,13 @@
     self.state = state;
 }
 
+
 - (void) didGetEaten
 {
-    // animation for death, send ghost to house, reset to default sprite
+    
+// send ghost to house, reset to default sprite
 }
+
 
 - (void) respawn
 {
@@ -51,7 +56,7 @@
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    // Search for the mouth and butt of Pac-Man
+    
 }
 
 /*

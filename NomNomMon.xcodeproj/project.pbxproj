@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52F6D5481742AAB200D907C8 /* nomNomMon0.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F6D5451742AAB200D907C8 /* nomNomMon0.png */; };
+		52F6D5491742AAB200D907C8 /* nomNomMon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F6D5461742AAB200D907C8 /* nomNomMon1.png */; };
+		52F6D54A1742AAB200D907C8 /* nomNomMon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F6D5471742AAB200D907C8 /* nomNomMon2.png */; };
 		5D6A822417303D1D000F672B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5D6A822317303D1D000F672B /* .gitignore */; };
 		5D8145A717299EF8004AAA94 /* ACActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8145A617299EF8004AAA94 /* ACActor.m */; };
 		5D87BB6F1728431900010940 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D87BB6E1728431900010940 /* UIKit.framework */; };
@@ -181,6 +184,9 @@
 				5D87BBAA1728456700010940 /* ACNomNomPlayer.m */,
 				5D87BBA91728456700010940 /* ACNomNomPlayer.h */,
 				5D87BBAA1728456700010940 /* ACNomNomPlayer.m */,
+				52F6D5451742AAB200D907C8 /* nomNomMon0.png */,
+				52F6D5461742AAB200D907C8 /* nomNomMon1.png */,
+				52F6D5471742AAB200D907C8 /* nomNomMon2.png */,
 				5D87BBAC1728458300010940 /* ACGhost.h */,
 				5D87BBAD1728458300010940 /* ACGhost.m */,
 				5D87BBAF172845D500010940 /* ACTileView.h */,

@@ -17,10 +17,12 @@ typedef NS_ENUM(NSInteger, ACGhostState) {
     ACGhostWaiting
 };
 
+
 @interface ACGhost : ACActor
 
-@property CGFloat speed;
+@property CGFloat speed; 
 @property (nonatomic) ACGhostState state;
+
 
 - (void) didGetEaten;
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation;

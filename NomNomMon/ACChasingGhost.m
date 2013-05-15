@@ -31,7 +31,7 @@
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    //self.ACDi nomNomMonLocation.x
+    //
 }
 
 /*

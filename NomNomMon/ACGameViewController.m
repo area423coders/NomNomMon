@@ -72,7 +72,14 @@
             gp.y == nnp.y)
         {
             // Send message to game controller
-            //[_game nomNomMonDidCollide:[_ghosts objectAtIndex:i]];
+            if ([[_ghosts objectAtIndex:i] state] == ACGhostPanicking)
+            {
+                [[_ghosts objectAtIndex:i] didGetEaten];
+            }
+            else
+            {
+                [_nomNomMon animateDeath];
+            }
         }
     }
 }

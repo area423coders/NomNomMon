@@ -19,4 +19,10 @@ typedef NS_ENUM(NSInteger, ACDirection) {
 
 @property ACDirection direction;
 
+- (void) changeDirectionTo: (ACDirection) newDirection;
+- (void) changeDirectionTo: (ACDirection) newDirection withRotationAnimation: (BOOL) animate;
+- (void) updatePositionWithTimeInterval: (NSTimeInterval) timeSinceLastUpdate;
+
++ (ACDirection) randomDirection;
+
 @end
