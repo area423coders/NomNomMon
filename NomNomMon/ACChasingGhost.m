@@ -19,19 +19,23 @@
     return self;
 }
 
-- (void) didGetEaten
-{
-    // animation for death, send ghost to house, reset to default sprite
-}
-
-- (void) respawn
-{
-    //another iteration of the respective ghost into the house
-}
-
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    //
+    self.destination = nomNomMonLocation;
+    if( [self isPointedInDirectionOf: self.destination] && [self canMove] )
+    {
+        // do something? nothing?
+    }
+    else
+    {
+        [self changeDirection];
+    }
+}
+//    self.direction
+    // point in the right direction
+    // are we pointed in the right direction?
+    // if we aren't, can we point in the right direction (are we surrounded by walls)?
+
 }
 
 /*
