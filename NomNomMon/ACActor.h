@@ -26,5 +26,6 @@ typedef NS_ENUM(NSInteger, ACDirection) {
 - (BOOL) isPointedInDirectionOf: (CGPoint) point;
 - (BOOL) canMove;
 
++ (ACDirection) randomDirection;
 
 @end
