@@ -27,4 +27,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if( [segue.identifier isEqualToString:@"startGame"] )
+    {
+        NSString* path = [[NSBundle mainBundle] pathForResource:@"Maps" ofType:@"plist"];
+        NSDictionary* mapList =  [NSDictionary dictionaryWithContentsOfFile:path];
+        if (amountData) {
+            Test = [NSMutableArray arrayWithArray: amountData];
+        }
+    }
+}
+
 @end

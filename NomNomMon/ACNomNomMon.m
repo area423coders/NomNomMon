@@ -30,7 +30,16 @@
         [self addSubview:animation];
     }
     return self;
-    
+}
+
+- (void) animateDeath
+{
+
+}
+
+- (void) respawn
+{
     
 }
+
 @end
