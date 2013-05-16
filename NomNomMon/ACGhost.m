@@ -8,18 +8,23 @@
 
 #import "ACGhost.h"
 
-@implementation ACGhost
+@implementation ACGhost {
+    CGPoint initialLocation;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.speed = 0; // pixels per whatever
         self.state = ACGhostWaiting;
+        initialLocation = frame.origin;
     }
     return self;
 }
-
+- (void) initialState
+{
+    self.state = ACGhostWaiting;
+}
 - (void) setState:(ACGhostState)state
 {
     switch (state) {
@@ -38,20 +43,27 @@
     }
     self.state = state;
 }
-
+ 
 - (void) didGetEaten
 {
-    // animation for death, send ghost to house, reset to default sprite
+    // change the imageview to eyes
+    self.state = ACGhostWaiting;
+    [self respawn];
 }
+
 
 - (void) respawn
 {
-    //another iteration of the respective ghost into the house
+    // animate return to ghost house
+    [UIView animateWithDuration:2.0 animations:^{
+        self.frame = CGRectMake(initialLocation.x, initialLocation.y, self.frame.size.width, self.frame.size.height);
+    }];
+    // change the imageview to ghosts
 }
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
-    // Search for the mouth and butt of Pac-Man
+    
 }
 
 /*

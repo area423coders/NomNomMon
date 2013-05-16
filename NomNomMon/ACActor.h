@@ -19,4 +19,13 @@ typedef NS_ENUM(NSInteger, ACDirection) {
 
 @property ACDirection direction;
 
+- (BOOL) isNortherly: (CGPoint) point;
+- (BOOL) isEasterly: (CGPoint) point;
+- (BOOL) isSoutherly: (CGPoint) point;
+- (BOOL) isWesterly: (CGPoint) point;
+- (BOOL) isPointedInDirectionOf: (CGPoint) point;
+- (BOOL) canMove;
+
++ (ACDirection) randomDirection;
+
 @end
