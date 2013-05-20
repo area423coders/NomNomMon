@@ -22,9 +22,9 @@
 {
     [super viewDidLoad];
     
-    [self.view addSubview:_map];
-    
     [self startGame];
+    
+    [self.view addSubview:_map];
 }
 
 - (void) startGame
@@ -43,7 +43,8 @@
     [_map addSubview:[[ACFoodView alloc] init]];
 }
 
-- (void) update
+/* Called by whatever is looping */
+- (void) updateWithDelta:(NSTimeInterval) delta
 {
     [_map updateNomNomMonPosition];
     
@@ -71,7 +72,7 @@
         if (gp.x == nnp.x &&
             gp.y == nnp.y)
         {
-            // Send message to game controller
+            // Send message to affected actors
             if ([[_ghosts objectAtIndex:i] state] == ACGhostPanicking)
             {
                 [[_ghosts objectAtIndex:i] didGetEaten];
