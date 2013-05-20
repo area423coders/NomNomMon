@@ -11,7 +11,7 @@
 
 @implementation ACNomNomPlayer
 
-- (id) initPlayer
+- (id) init
 {
     if (self = [super init])
     {

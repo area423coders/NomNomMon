@@ -9,14 +9,26 @@
 #import "ACNomNomGame.h"
 #import "ACNomNomPlayer.h"
 
-@implementation ACNomNomGame
+@implementation ACNomNomGame {
+    NSTimer* timer;
+}
 
 - (id) init
 {
     self = [super init];
-    self.level = 0;
-    ACNomNomPlayer* player = [self.player initPlayer];
+    if( self )
+    {
+        self.secondsPassed = 0;
+        self.level = 0;
+        self.player = [[ACNomNomPlayer alloc] init];
+        timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
+    }
     return self;
+}
+
+- (void)timerFireMethod:(NSTimer*)theTimer
+{
+    self.secondsPassed++;
 }
 
 @end
