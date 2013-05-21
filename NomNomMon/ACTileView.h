@@ -27,5 +27,6 @@ typedef NS_ENUM(NSInteger, ACTileType) {
 @interface ACTileView : UIView
 
 @property ACTileType type;
+- (id) initWithTileType: (ACTileType) tileType;
 
 @end

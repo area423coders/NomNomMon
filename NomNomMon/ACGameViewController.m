@@ -21,16 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self startGame]; // Mr. Oswald changed the order of these
     [self.view addSubview:_map];
-    
-    [self startGame];
 }
 
 - (void) startGame
 {
     _game = [[ACNomNomGame alloc] init];
-    _map = [[ACMapView alloc] init];
 }
 
 - (void) nextLevel

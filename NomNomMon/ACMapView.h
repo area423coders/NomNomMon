@@ -17,7 +17,11 @@
 @property NSArray* tiles;
 @property ACNomNomMon* nomNomMon;
 @property NSArray* ghosts;
+@property NSUInteger ROWS;
+@property NSUInteger COLS;
+@property NSUInteger tileSize;
 
+- (id) initWithFrame:(CGRect)frame  andTiles: (NSArray*) tiles;
 - (void) updateGhostPositions;
 - (void) updateNomNomMonPosition;
 - (ACTileView*) getTileAtRow: (NSUInteger) row andColumn: (NSUInteger) column;
