@@ -16,4 +16,7 @@
 @property int level;
 @property NSUInteger secondsPassed;
 
+// - (void) nomNomMonDidDie;
+// isGameOver
+
 @end

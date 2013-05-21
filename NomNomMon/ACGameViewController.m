@@ -80,6 +80,10 @@
             else
             {
                 [_nomNomMon animateDeath];
+                // Call [game nomNomMonDidDie];
+                // if game is over:
+                //  stop loop
+                //  segue to scoreboard or display "Game Over" alert
             }
         }
     }
@@ -101,5 +105,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// Methods to respond to swipes
+// swipeLeft: change NNM's direction to West if possible
+// swipeRight: change NNM's direction to East if possible
+// swipeUp: change NNM's direction to North if possible
+// swipeDown: change NNM's direction to South if possible
 
 @end

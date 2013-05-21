@@ -33,4 +33,9 @@
 - (void) checkForCollisions; // Checks for collisions, then notifies the objects
 - (CGPoint) getPointOnMapForActor:(ACActor*)actor;
 
+// Methods to respond to swipes, linked to UISwipeGestureRecognizers
+// swipeLeft
+// swipeRight
+// swipeUp
+// swipeDown
 @end

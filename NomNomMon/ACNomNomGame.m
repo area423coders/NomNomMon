@@ -29,6 +29,16 @@
 - (void)timerFireMethod:(NSTimer*)theTimer
 {
     self.secondsPassed++;
+    // call updateWithDelta in ACGameViewController
 }
+
+
+//- (void) nomNomMonDidDie
+//{
+//    decrease # of lives in _player
+//}
+
+// isGameOver:
+// returns true if NNM has <= 0 respawns left.
 
 @end
