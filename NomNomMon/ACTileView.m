@@ -39,10 +39,10 @@
             return @"wall0corners.png";
             break;
         case ACTwoRoundedCornerNTile:
-            return @"redSquare@,png";
+            return @"N.png";
             break;
         case ACOneRoundedCornerNWTile:
-            return @"Wall1Corner.png";
+            return @"NW.png";
             break;
         case ACFourRoundedCornersTile:
             return @"wall4Corners.png";
@@ -70,5 +70,6 @@
             break;
     }
 }
+
 
 @end

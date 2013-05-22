@@ -24,7 +24,7 @@
     return point.y < self.frame.origin.y;
 }
 
-- (BOOL) isEasterly: (CGPoint) point
+- (BOOL) isEasterly: (CGPoint) point // in memory of Ben Easterly ??/??/???? - 12/31/2012
 {
     return point.x > self.frame.origin.x;
 }
