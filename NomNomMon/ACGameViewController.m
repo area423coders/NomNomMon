@@ -40,7 +40,8 @@
     [_map addSubview:[[ACFoodView alloc] init]];
 }
 
-- (void) update
+/* Called by whatever is looping */
+- (void) updateWithDelta:(NSTimeInterval) delta
 {
     [_map updateNomNomMonPosition];
     
@@ -68,7 +69,7 @@
         if (gp.x == nnp.x &&
             gp.y == nnp.y)
         {
-            // Send message to game controller
+            // Send message to affected actors
             if ([[_ghosts objectAtIndex:i] state] == ACGhostPanicking)
             {
                 [[_ghosts objectAtIndex:i] didGetEaten];
@@ -76,6 +77,10 @@
             else
             {
                 [_nomNomMon animateDeath];
+                // Call [game nomNomMonDidDie];
+                // if game is over:
+                //  stop loop
+                //  segue to scoreboard or display "Game Over" alert
             }
         }
     }
@@ -97,5 +102,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// Methods to respond to swipes
+// swipeLeft: change NNM's direction to West if possible
+// swipeRight: change NNM's direction to East if possible
+// swipeUp: change NNM's direction to North if possible
+// swipeDown: change NNM's direction to South if possible
 
 @end

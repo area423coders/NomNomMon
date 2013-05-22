@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, ACGhostState) {
 
 @property CGFloat speed; 
 @property (nonatomic) ACGhostState state;
-
+@property CGPoint destination;
 
 - (void) didGetEaten;
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation;
