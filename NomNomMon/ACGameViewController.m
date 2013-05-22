@@ -56,6 +56,15 @@
     [_map updateGhostPositions];
     [self checkForCollisions];
     [_scoreLabel setText:[NSString stringWithFormat:@"%i", _game.player.score]];
+    
+    // if game is over:
+    if ([_game isGameOver])
+    {
+        //  segue to scoreboard or display "Game Over" alert
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Nom Nom Mon has fallen." delegate:self cancelButtonTitle:@"kk bro" otherButtonTitles:nil];
+        [alert show];
+        // game stops automatically
+    }
 }
 
 /* Collision Handling */
@@ -79,11 +88,11 @@
             }
             else
             {
+                // Tell the game controller that Nom Nom Mon died
                 [_nomNomMon animateDeath];
-                // Call [game nomNomMonDidDie];
-                // if game is over:
-                //  stop loop
-                //  segue to scoreboard or display "Game Over" alert
+                
+                // Tell the game controller that Nom Nom Mon died
+                [_game playerDidDie];
             }
         }
     }
