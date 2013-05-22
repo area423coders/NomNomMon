@@ -20,9 +20,11 @@
         initialLocation = frame.origin;
     }
     return self;
+    self.eaten = NO;
 }
-- (void) initialState
+- (void) initialState // When the ghost spawns
 {
+    self.eaten = NO;
     self.state = ACGhostWaiting;
 }
 - (void) setState:(ACGhostState)state
@@ -47,18 +49,29 @@
 - (void) didGetEaten
 {
     // change the imageview to eyes
+    self.eaten = YES;
     self.state = ACGhostWaiting;
     [self respawn];
 }
 
-
+        
 - (void) respawn
 {
     // animate return to ghost house
-    [UIView animateWithDuration:2.0 animations:^{
+    [UIView animateWithDuration:1.0 animations:^{
         self.frame = CGRectMake(initialLocation.x, initialLocation.y, self.frame.size.width, self.frame.size.height);
     }];
+    self.eaten = NO;
     // change the imageview to ghosts
+}
+
+- (void) respawnAllGhosts // used when NomNomMon dies, and the board resets.
+{
+    for (int i = 0; i < 5; i++)
+    {
+        self.state = ACGhostWaiting;
+        [self respawn];
+    }
 }
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
