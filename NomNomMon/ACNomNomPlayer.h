@@ -13,6 +13,4 @@
 @property int score;
 @property int numberOfLives;
 
-- (id) initPlayer;
-
 @end

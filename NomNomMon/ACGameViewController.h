@@ -7,6 +7,8 @@
 //  Alec
 //
 
+// DirectX is inferior to OpenGL
+
 #import <UIKit/UIKit.h>
 #import "ACMapView.h"
 #import "ACNomNomMon.h"
@@ -27,8 +29,13 @@
 - (void) startGame;
 - (void) nextLevel;
 
-- (void) update;
+- (void) updateWithDelta:(NSTimeInterval) delta;
 - (void) checkForCollisions; // Checks for collisions, then notifies the objects
 - (CGPoint) getPointOnMapForActor:(ACActor*)actor;
 
+// Methods to respond to swipes, linked to UISwipeGestureRecognizers
+// swipeLeft
+// swipeRight
+// swipeUp
+// swipeDown
 @end
