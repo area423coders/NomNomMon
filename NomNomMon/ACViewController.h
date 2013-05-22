@@ -10,5 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ACViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *startButton;
 
 @end

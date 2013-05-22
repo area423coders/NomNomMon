@@ -8,6 +8,8 @@
 //
 
 #import "ACViewController.h"
+#import "ACGameViewController.h"
+#import "ACMapView.h"
 
 @interface ACViewController ()
 
@@ -33,9 +35,12 @@
     {
         NSString* path = [[NSBundle mainBundle] pathForResource:@"Maps" ofType:@"plist"];
         NSDictionary* mapList =  [NSDictionary dictionaryWithContentsOfFile:path];
-        if (amountData) {
-            Test = [NSMutableArray arrayWithArray: amountData];
-        }
+        ACGameViewController* gameViewController = (ACGameViewController*) segue.destinationViewController;
+        ACMapView* mapView = [[ACMapView alloc] initWithFrame:CGRectMake(0, 100, 1023, 759) andTiles:[mapList objectForKey:@"Map1"]];
+        gameViewController.map = mapView;
+        gameViewController.map.ROWS = 23;
+        gameViewController.map.COLS = 31;
+        gameViewController.map.tileSize = 33;
     }
 }
 
