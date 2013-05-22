@@ -43,15 +43,21 @@
 /* Called by whatever is looping */
 - (void) updateWithDelta:(NSTimeInterval) delta
 {
+    // Moves Nom Nom Mon across the board
     [_map updateNomNomMonPosition];
     
+    // Tells ghosts where Nom Nom Mon is
     for (int i = 0; i < [_ghosts count]; i++)
     {
         [[_ghosts objectAtIndex:i] updateDestinationWithLocation:[self getPointOnMapForActor:_nomNomMon]];
     }
     
+    // Moves ghosts across the map
     [_map updateGhostPositions];
+    
+    // Checks for collisions with Nom Nom Mon
     [self checkForCollisions];
+    
     [_scoreLabel setText:[NSString stringWithFormat:@"%i", _game.player.score]];
     
     // if game is over:
