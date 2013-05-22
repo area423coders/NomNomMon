@@ -114,6 +114,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="mk6-gT-yGB"/>
         <segue reference="DJk-zQ-WVz"/>
     </inferredMetricsTieBreakers>
 </document>
