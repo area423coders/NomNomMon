@@ -72,6 +72,7 @@
 		52E9E61717381C6F00EE39E2 /* nomNomMon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomNomMon0.png; sourceTree = "<group>"; };
 		52E9E61817381C6F00EE39E2 /* nomNomMon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomNomMon1.png; sourceTree = "<group>"; };
 		52E9E61917381C6F00EE39E2 /* nomNomMon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomNomMon2.png; sourceTree = "<group>"; };
+		52FA21D3174E87D30072F62F /* crappyghost2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crappyghost2.png; sourceTree = "<group>"; };
 		5D6A822317303D1D000F672B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5D8145A517299EF8004AAA94 /* ACActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActor.h; sourceTree = "<group>"; };
 		5D8145A617299EF8004AAA94 /* ACActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACActor.m; sourceTree = "<group>"; };
@@ -139,19 +140,14 @@
 		13584C7C174D324800F1FDDE /* img */ = {
 			isa = PBXGroup;
 			children = (
-				13634822174E849B00B5AED6 /* E.png */,
-				13634823174E849B00B5AED6 /* N.png */,
-				13634824174E849B00B5AED6 /* NE.png */,
-				13634825174E849B00B5AED6 /* NW.png */,
-				13634826174E849B00B5AED6 /* S.png */,
-				13634827174E849B00B5AED6 /* SE.png */,
-				13634828174E849B00B5AED6 /* SW.png */,
-				13634829174E849B00B5AED6 /* W.png */,
+				DF11C8A0174D26BD0033A1B6 /* crappyghost.png */,
+				13584C66174D322900F1FDDE /* E.png */,
 				13584C67174D322900F1FDDE /* emptyTile.png */,
 				13584C6A174D322900F1FDDE /* NomNomMonMap.png */,
 				13584C6B174D322900F1FDDE /* pelletTile.png */,
 				13584C6C174D322900F1FDDE /* powerPelletTile.png */,
 				131876D3173ABCA4006A6CCC /* wall0corners.png */,
+				52FA21D3174E87D30072F62F /* crappyghost2.png */,
 				131876D5173ABCA4006A6CCC /* wall4Corners.png */,
 				52E9E61717381C6F00EE39E2 /* nomNomMon0.png */,
 				52E9E61817381C6F00EE39E2 /* nomNomMon1.png */,
