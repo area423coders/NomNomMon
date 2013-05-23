@@ -22,21 +22,17 @@
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {
     self.destination = nomNomMonLocation;
-    if( [self isPointedInDirectionOf: self.destination] && [self canMove] )
-    {
-        // do something? nothing?
-    }
-    else
+    if( !([self isPointedInDirectionOf: self.destination] && [self canMove] ) )
     {
         [self changeDirection];
     }
-}
+
 //    self.direction
     // point in the right direction
     // are we pointed in the right direction?
     // if we aren't, can we point in the right direction (are we surrounded by walls)?
 
-}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

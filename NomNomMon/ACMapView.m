@@ -49,6 +49,14 @@
     return tileViews;
 }
 
+- (BOOL) isWallInDirection: (ACDirection) direction fromLocation: (CGRect) frame
+{
+    // add/subtract 33px in the direction of frame.origin.x || frame.origin.y
+    // get a view at the new location
+    // see what type it is.
+}
+
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
