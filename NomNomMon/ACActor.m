@@ -7,6 +7,7 @@
 //
 
 #import "ACActor.h"
+#import "ACMapView.h"
 
 @implementation ACActor
 
@@ -100,6 +101,13 @@
     CGRect newFrame = CGRectMake(self.frame.origin.x+dx, self.frame.origin.y+dy, self.frame.size.width, self.frame.size.height);
     self.frame = newFrame;
 }
+
+- (BOOL) canMove
+{
+    ACMapView* map = self.superview;
+    return ![map isWallInDirection: self.direction fromLocation: self.frame];
+}
+
 
 - (void) changeDirectionTo: (ACDirection) newDirection
 {

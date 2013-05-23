@@ -65,14 +65,6 @@
     // change the imageview to ghosts
 }
 
-- (void) respawnAllGhosts // used when NomNomMon dies, and the board resets.
-{
-    for (int i = 0; i < 5; i++)
-    {
-        self.state = ACGhostWaiting;
-        [self respawn];
-    }
-}
 
 - (void) updateDestinationWithLocation: (CGPoint) nomNomMonLocation
 {

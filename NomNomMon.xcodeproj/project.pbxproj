@@ -49,6 +49,7 @@
 		89C7BC38173C158500541760 /* SW.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C7BC32173C158500541760 /* SW.png */; };
 		89C7BC39173C158500541760 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C7BC33173C158500541760 /* W.png */; };
 		DF11C8A1174D26BD0033A1B6 /* crappyghost.png in Resources */ = {isa = PBXBuildFile; fileRef = DF11C8A0174D26BD0033A1B6 /* crappyghost.png */; };
+		DF26C168174E818B0001087B /* ACNomNomPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF26C167174E818B0001087B /* ACNomNomPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		89C7BC32173C158500541760 /* SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SW.png; sourceTree = "<group>"; };
 		89C7BC33173C158500541760 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
 		DF11C8A0174D26BD0033A1B6 /* crappyghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crappyghost.png; path = ../../crappyghost.png; sourceTree = "<group>"; };
+		DF26C167174E818B0001087B /* ACNomNomPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNomNomPlayer.m; sourceTree = "<group>"; };
 		DFF68B7A17454A82007A60D6 /* ACChasingGhost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACChasingGhost.h; sourceTree = "<group>"; };
 		DFF68B7B17454A82007A60D6 /* ACChasingGhost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACChasingGhost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +197,7 @@
 				5D87BB861728431900010940 /* MainStoryboard.storyboard */,
 				5D87BB911728444B00010940 /* ACGameViewController.h */,
 				5D87BB921728444B00010940 /* ACGameViewController.m */,
+				898D14F1173AB2C10049211E /* redSquare2.png */,
 				89C7BC2A173C0D4100541760 /* emptyTile.png */,
 				5D87BB941728445B00010940 /* ACHighScoreViewController.h */,
 				5D87BB951728445B00010940 /* ACHighScoreViewController.m */,
@@ -207,7 +210,7 @@
 				5D87BB9A172844F400010940 /* ACMapView.h */,
 				5D87BB9B172844F400010940 /* ACMapView.m */,
 				5D87BBA91728456700010940 /* ACNomNomPlayer.h */,
-				13584C64174D31A000F1FDDE /* ACNomNomPlayer.m */,
+				DF26C167174E818B0001087B /* ACNomNomPlayer.m */,
 				DFF68B7A17454A82007A60D6 /* ACChasingGhost.h */,
 				DFF68B7B17454A82007A60D6 /* ACChasingGhost.m */,
 				5D87BBAC1728458300010940 /* ACGhost.h */,
@@ -338,7 +341,7 @@
 				5D87BBAE1728458300010940 /* ACGhost.m in Sources */,
 				5D87BBB1172845D500010940 /* ACTileView.m in Sources */,
 				5D8145A717299EF8004AAA94 /* ACActor.m in Sources */,
-				13584C65174D31A000F1FDDE /* ACNomNomPlayer.m in Sources */,
+				DF26C168174E818B0001087B /* ACNomNomPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
