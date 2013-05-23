@@ -43,16 +43,31 @@
 /* Called by whatever is looping */
 - (void) updateWithDelta:(NSTimeInterval) delta
 {
+    // Moves Nom Nom Mon across the board
     [_map updateNomNomMonPosition];
     
+    // Tells ghosts where Nom Nom Mon is
     for (int i = 0; i < [_ghosts count]; i++)
     {
         [[_ghosts objectAtIndex:i] updateDestinationWithLocation:[self getPointOnMapForActor:_nomNomMon]];
     }
     
+    // Moves ghosts across the map
     [_map updateGhostPositions];
+    
+    // Checks for collisions with Nom Nom Mon
     [self checkForCollisions];
+    
     [_scoreLabel setText:[NSString stringWithFormat:@"%i", _game.player.score]];
+    
+    // if game is over:
+    if ([_game isGameOver])
+    {
+        //  segue to scoreboard or display "Game Over" alert
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Nom Nom Mon has fallen." delegate:self cancelButtonTitle:@"kk bro" otherButtonTitles:nil];
+        [alert show];
+        // game stops automatically
+    }
 }
 
 /* Collision Handling */
@@ -76,11 +91,11 @@
             }
             else
             {
+                // Tell the game controller that Nom Nom Mon died
                 [_nomNomMon animateDeath];
-                // Call [game nomNomMonDidDie];
-                // if game is over:
-                //  stop loop
-                //  segue to scoreboard or display "Game Over" alert
+                
+                // Tell the game controller that Nom Nom Mon died
+                [_game playerDidDie];
             }
         }
     }
