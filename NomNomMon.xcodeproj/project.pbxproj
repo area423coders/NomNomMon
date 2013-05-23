@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13584C71174D322A00F1FDDE /* E.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C66174D322900F1FDDE /* E.png */; };
 		13584C72174D322A00F1FDDE /* emptyTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C67174D322900F1FDDE /* emptyTile.png */; };
 		13584C75174D322A00F1FDDE /* NomNomMonMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C6A174D322900F1FDDE /* NomNomMonMap.png */; };
 		13584C76174D322A00F1FDDE /* pelletTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C6B174D322900F1FDDE /* pelletTile.png */; };
@@ -28,6 +27,7 @@
 		1363483F174E860600B5AED6 /* SE.png in Resources */ = {isa = PBXBuildFile; fileRef = 13634837174E860600B5AED6 /* SE.png */; };
 		13634840174E860600B5AED6 /* SW.png in Resources */ = {isa = PBXBuildFile; fileRef = 13634838174E860600B5AED6 /* SW.png */; };
 		13634841174E860600B5AED6 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 13634839174E860600B5AED6 /* W.png */; };
+		52FA21D4174E87D30072F62F /* crappyghost2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FA21D3174E87D30072F62F /* crappyghost2.png */; };
 		5D6A822417303D1D000F672B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5D6A822317303D1D000F672B /* .gitignore */; };
 		5D8145A717299EF8004AAA94 /* ACActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8145A617299EF8004AAA94 /* ACActor.m */; };
 		5D87BB6F1728431900010940 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D87BB6E1728431900010940 /* UIKit.framework */; };
@@ -88,6 +88,7 @@
 		52E9E61717381C6F00EE39E2 /* nomNomMon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomNomMon0.png; sourceTree = "<group>"; };
 		52E9E61817381C6F00EE39E2 /* nomNomMon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomNomMon1.png; sourceTree = "<group>"; };
 		52E9E61917381C6F00EE39E2 /* nomNomMon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomNomMon2.png; sourceTree = "<group>"; };
+		52FA21D3174E87D30072F62F /* crappyghost2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crappyghost2.png; sourceTree = "<group>"; };
 		5D6A822317303D1D000F672B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5D8145A517299EF8004AAA94 /* ACActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActor.h; sourceTree = "<group>"; };
 		5D8145A617299EF8004AAA94 /* ACActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACActor.m; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 				13584C6B174D322900F1FDDE /* pelletTile.png */,
 				13584C6C174D322900F1FDDE /* powerPelletTile.png */,
 				131876D3173ABCA4006A6CCC /* wall0corners.png */,
+				52FA21D3174E87D30072F62F /* crappyghost2.png */,
 				131876D5173ABCA4006A6CCC /* wall4Corners.png */,
 				52E9E61717381C6F00EE39E2 /* nomNomMon0.png */,
 				52E9E61817381C6F00EE39E2 /* nomNomMon1.png */,
@@ -353,6 +355,7 @@
 				1363483F174E860600B5AED6 /* SE.png in Resources */,
 				13634840174E860600B5AED6 /* SW.png in Resources */,
 				13634841174E860600B5AED6 /* W.png in Resources */,
+				52FA21D4174E87D30072F62F /* crappyghost2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
