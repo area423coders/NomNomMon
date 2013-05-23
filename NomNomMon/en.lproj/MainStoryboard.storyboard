@@ -88,33 +88,13 @@
             <point key="canvasLocation" x="537" y="1700"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ACGameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ACGameViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ACHighScoreViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ACHighScoreViewController.h"/>
-        </class>
-        <class className="ACViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ACViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="startButton" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wAS-Zk-Drq"/>
         <segue reference="5R0-Wu-HGK"/>
+        <segue reference="DJk-zQ-WVz"/>
     </inferredMetricsTieBreakers>
 </document>
