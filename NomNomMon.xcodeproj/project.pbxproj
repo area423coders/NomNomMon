@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13584C65174D31A000F1FDDE /* ACNomNomPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13584C64174D31A000F1FDDE /* ACNomNomPlayer.m */; };
 		13584C71174D322A00F1FDDE /* E.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C66174D322900F1FDDE /* E.png */; };
 		13584C72174D322A00F1FDDE /* emptyTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C67174D322900F1FDDE /* emptyTile.png */; };
 		13584C73174D322A00F1FDDE /* N.png in Resources */ = {isa = PBXBuildFile; fileRef = 13584C68174D322900F1FDDE /* N.png */; };
@@ -56,7 +55,6 @@
 		131876D3173ABCA4006A6CCC /* wall0corners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall0corners.png; sourceTree = "<group>"; };
 		131876D4173ABCA4006A6CCC /* NW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NW.png; sourceTree = "<group>"; };
 		131876D5173ABCA4006A6CCC /* wall4Corners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall4Corners.png; sourceTree = "<group>"; };
-		13584C64174D31A000F1FDDE /* ACNomNomPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNomNomPlayer.m; sourceTree = "<group>"; };
 		13584C66174D322900F1FDDE /* E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E.png; sourceTree = "<group>"; };
 		13584C67174D322900F1FDDE /* emptyTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyTile.png; sourceTree = "<group>"; };
 		13584C68174D322900F1FDDE /* N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = N.png; sourceTree = "<group>"; };
@@ -138,6 +136,7 @@
 		13584C7C174D324800F1FDDE /* img */ = {
 			isa = PBXGroup;
 			children = (
+				DF11C8A0174D26BD0033A1B6 /* crappyghost.png */,
 				13584C66174D322900F1FDDE /* E.png */,
 				13584C67174D322900F1FDDE /* emptyTile.png */,
 				13584C68174D322900F1FDDE /* N.png */,
@@ -191,13 +190,11 @@
 			isa = PBXGroup;
 			children = (
 				13584C7C174D324800F1FDDE /* img */,
-				DF11C8A0174D26BD0033A1B6 /* crappyghost.png */,
 				5D87BB7D1728431900010940 /* ACAppDelegate.h */,
 				5D87BB7E1728431900010940 /* ACAppDelegate.m */,
 				5D87BB861728431900010940 /* MainStoryboard.storyboard */,
 				5D87BB911728444B00010940 /* ACGameViewController.h */,
 				5D87BB921728444B00010940 /* ACGameViewController.m */,
-				898D14F1173AB2C10049211E /* redSquare2.png */,
 				89C7BC2A173C0D4100541760 /* emptyTile.png */,
 				5D87BB941728445B00010940 /* ACHighScoreViewController.h */,
 				5D87BB951728445B00010940 /* ACHighScoreViewController.m */,
